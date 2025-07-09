@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\DuelBornUE5ProjectFiles\\ProjectDB\\Source\\ProjectDB\\ProjectDB.Build.cs",
-		"D:\\DuelBornUE5ProjectFiles\\ProjectDB\\Source\\ProjectDB.Target.cs",
-		"D:\\DuelBornUE5ProjectFiles\\ProjectDB\\Source\\ProjectDBEditor.Target.cs"
+		"D:\\Repository\\ProjectDB\\ProjectDB\\Source\\ProjectDB\\ProjectDB.Build.cs",
+		"D:\\Repository\\ProjectDB\\ProjectDB\\Source\\ProjectDB.Target.cs",
+		"D:\\Repository\\ProjectDB\\ProjectDB\\Source\\ProjectDBEditor.Target.cs"
 	],
 	"EngineVersion": "5.5.4"
 }
