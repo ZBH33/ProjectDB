@@ -1,0 +1,16 @@
+name: validate-glossary
+on: [pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare glossary vs scripts
+        run: |
+          missing=$(yq -r 'keys[]' .github/commands.yml | while read k; do
+            script=$(yq -r ".$k.script" .github/commands.yml)
+            [[ -x ".github/scripts/$script" ]] || echo "$script"
+          done)
+          if [[ -n "$missing" ]]; then
+            echo "Missing or non-executable scripts:"; echo "$missing"; exit 1; fi

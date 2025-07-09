@@ -1,0 +1,14 @@
+name: command-engine
+description: Parse commit messages and run glossary commands
+inputs:
+  glossary-path:
+    description: Path to commands.yml
+    default: .github/commands.yml
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        cp "${{ github.action_path }}/entrypoint.sh" ./
+        chmod +x entrypoint.sh
+        ./entrypoint.sh "${{ inputs.glossary-path }}"

@@ -1,0 +1,28 @@
+name: command-dispatch-template
+on:
+  workflow_call:
+
+jobs:
+  policy-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate actor / branch
+        run: |
+          # Example: enforce protected branches
+          if [[ "${{ github.ref }}" != "refs/heads/main" && "${{ github.actor }}" != "trusted-user" ]]; then
+            echo "Untrusted actor or branch"; exit 1; fi
+
+  commands:
+    needs: policy-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/command-engine@v1
+        with:
+          glossary-path: .github/commands.yml
+
+      - if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: command-logs
+          path: logs/errors

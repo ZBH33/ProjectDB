@@ -1,0 +1,18 @@
+name: generate-command-docs
+on:
+  push:
+    paths: [.github/commands.yml]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate docs
+        run: |
+          echo "# Command Glossary" > docs/COMMANDS.md
+          yq -r '. as $root | keys[] | "* **\(.):** \($root[.].description)"' .github/commands.yml >> docs/COMMANDS.md
+      - name: Commit docs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: update command glossary"

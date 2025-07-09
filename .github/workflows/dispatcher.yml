@@ -1,0 +1,16 @@
+name: command-dispatcher
+on:
+  push:
+    branches: ['**']
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: ${{ github.ref }}-commands
+  cancel-in-progress: true
+
+jobs:
+  run-commands:
+    uses: ./.github/workflows/_internal/dispatch-template.yml
