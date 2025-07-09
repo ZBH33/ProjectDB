@@ -8,28 +8,34 @@ timestamp=$(date +%Y%m%d_%H%M%S)
 
 # Load yq if missing
 if ! command -v yq &> /dev/null; then
-  sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
-  sudo chmod +x /usr/bin/yq
+  sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 \
+    -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
 fi
 
-# Extract commit messages
+# 1) Extract all commit messages from the push event
 if [[ -n "${GITHUB_EVENT_PATH:-}" && -f "$GITHUB_EVENT_PATH" ]]; then
   echo -e "\033[1;36mExtracting commit messages from event payload...\033[0m"
-  # Pull all messages from the push event JSON
   msg=$(yq eval '.commits[].message' "$GITHUB_EVENT_PATH" --no-colors || echo "")
 else
   echo -e "\033[1;36mExtracting commit messages via git log...\033[0m"
-  # Fallback to last‐commit range
   msg=$(git log --pretty=format:%B HEAD~1..HEAD || echo "")
 fi
 
+# 2) Pull out all !commands
 echo -e "\033[1;36mDetected commands in commit messages:\033[0m"
 cmds=$(echo "$msg" | grep -oE '!([a-zA-Z0-9_-]+)' | tr -d '!')
 echo "$cmds"
 
-# Deduplicate commands
+# 3) If none, exit 0 with a green light
+if [[ -z "$cmds" ]]; then
+  echo -e "\033[1;32m✅ No commands found. Skipping execution.\033[0m"
+  exit 0
+fi
+
+# 4) Deduplicate
 readarray -t unique_cmds < <(printf "%s\n" $cmds | awk '!x[$0]++')
 
+# 5) Process each command
 for cmd in "${unique_cmds[@]}"; do
   script=$(yq -r ".${cmd}.script" "$GLOSSARY" 2>/dev/null || echo "null")
   description=$(yq -r ".${cmd}.description" "$GLOSSARY" 2>/dev/null || echo "")
