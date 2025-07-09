@@ -1,0 +1,21 @@
+name: UE build version
+on:
+  pull_request:
+  push:
+    branches: [main, release/**]
+
+jobs:
+  ue-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: ver
+        uses: OrchidIsle/UE5-Semantic-Versioning@latest
+        with:
+          BUILD_PREFIX: dev
+          CONFIG_DIR_PATH: ${{ github.workspace }}/ProjectDB/Config
+          ADD_BUILD_INFO: true
+          USE_RELEASE_BUILD: false
+    outputs:
+      build_id: ${{ steps.ver.outputs.BUILD_ID }}
+      version: ${{ steps.ver.outputs.VERSION }}
