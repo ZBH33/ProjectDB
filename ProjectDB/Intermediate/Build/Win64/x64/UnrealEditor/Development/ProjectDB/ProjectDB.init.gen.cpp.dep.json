@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\zbill\\documents\\unreal projects\\projectdb\\intermediate\\build\\win64\\unrealeditor\\inc\\projectdb\\uht\\projectdb.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\zbill\\documents\\unreal projects\\projectdb\\intermediate\\build\\win64\\x64\\projectdbeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\zbill\\documents\\unreal projects\\projectdb\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\projectdb\\definitions.projectdb.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

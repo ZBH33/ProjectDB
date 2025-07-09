@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\zbill\\documents\\unreal projects\\projectdb\\intermediate\\build\\win64\\unrealeditor\\inc\\projectdb\\uht\\projectdbgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\zbill\\documents\\unreal projects\\projectdb\\intermediate\\build\\win64\\x64\\projectdbeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\zbill\\documents\\unreal projects\\projectdb\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\projectdb\\definitions.projectdb.h",
+            "c:\\users\\zbill\\documents\\unreal projects\\projectdb\\source\\projectdb\\projectdbgamemode.h",
+            "d:\\epicgames\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "d:\\epicgames\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "d:\\epicgames\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "d:\\epicgames\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\zbill\\documents\\unreal projects\\projectdb\\intermediate\\build\\win64\\unrealeditor\\inc\\projectdb\\uht\\projectdbgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

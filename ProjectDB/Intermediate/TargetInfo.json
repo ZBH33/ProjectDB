@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ProjectDB",
+			"Path": "..\\Source\\ProjectDB.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ProjectDBEditor",
+			"Path": "..\\Source\\ProjectDBEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
