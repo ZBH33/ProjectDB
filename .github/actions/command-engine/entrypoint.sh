@@ -13,14 +13,22 @@ if ! command -v yq &> /dev/null; then
 fi
 
 # Extract commit messages
-msg=$(git log "${GITHUB_SHA}^1".."${GITHUB_SHA}" --pretty=format:%B)
+if [[ -n "${GITHUB_EVENT_PATH:-}" && -f "$GITHUB_EVENT_PATH" ]]; then
+  echo -e "\033[1;36mExtracting commit messages from event payload...\033[0m"
+  # Pull all messages from the push event JSON
+  msg=$(yq eval '.commits[].message' "$GITHUB_EVENT_PATH" --no-colors || echo "")
+else
+  echo -e "\033[1;36mExtracting commit messages via git log...\033[0m"
+  # Fallback to last‐commit range
+  msg=$(git log --pretty=format:%B HEAD~1..HEAD || echo "")
+fi
+
 echo -e "\033[1;36mDetected commands in commit messages:\033[0m"
 cmds=$(echo "$msg" | grep -oE '!([a-zA-Z0-9_-]+)' | tr -d '!')
 echo "$cmds"
 
 # Deduplicate commands
-readarray -t unique_cmds < <(printf "%s
-" $cmds | awk '!x[$0]++')
+readarray -t unique_cmds < <(printf "%s\n" $cmds | awk '!x[$0]++')
 
 for cmd in "${unique_cmds[@]}"; do
   script=$(yq -r ".${cmd}.script" "$GLOSSARY" 2>/dev/null || echo "null")
@@ -35,7 +43,7 @@ for cmd in "${unique_cmds[@]}"; do
 
   script_path=".github/scripts/$script"
   if [ ! -x "$script_path" ]; then
-    echo -e "\033[1;31m❌ Script '$script_path' is missing or/or not executable\033[0m"
+    echo -e "\033[1;31m❌ Script '$script_path' is missing or not executable\033[0m"
     log_file="logs/errors/${timestamp}_${cmd}_priority-critical.log"
     echo "[$(date)] Missing or non-executable script: $script_path" >> "$log_file"
     exit 1
