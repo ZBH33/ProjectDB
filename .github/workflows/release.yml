@@ -1,0 +1,57 @@
+name: "Release on Demand"
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  create-release:
+    name: "Create GitHub Release if prompted"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # full history for tag detection and commit msg
+
+      - name: Check for release prompt in commit message
+        id: check-release
+        run: |
+          MESSAGE=$(git log -1 --pretty=%B)
+          echo "Last commit message: '$MESSAGE'"
+          if [[ "$MESSAGE" != *"[release]"* ]]; then
+            echo "⚠️ No [release] keyword found; skipping release"
+            exit 78  # neutral exit to skip remaining steps
+          fi
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install Conventional Changelog CLI
+        run: npm install -g conventional-changelog-cli@latest
+
+      - name: Generate Release Notes
+        id: generate_notes
+        run: |
+          # Generate the most recent section for this release
+          TAG=$(git describe --tags --abbrev=0 HEAD)
+          conventional-changelog -p angular -u v$TAG --release-count 1 > release_notes.md
+          # Escape newlines for GitHub action output
+          BODY=$(sed ':a;N;$!ba;s/\n/\\n/g' release_notes.md)
+          echo "::set-output name=body::$BODY"
+          echo "::set-output name=tag::$TAG"
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.generate_notes.outputs.tag }}
+          release_name: "Release ${{ steps.generate_notes.outputs.tag }}"
+          body: ${{ steps.generate_notes.outputs.body }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
