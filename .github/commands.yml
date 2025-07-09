@@ -1,7 +1,0 @@
-# Command Glossary
-index:
-  script: index.sh
-  description: Index content into the database
-release:
-  script: release.sh
-  description: Create a new release tag
