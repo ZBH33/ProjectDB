@@ -1,4 +1,7 @@
 name: generate-command-docs
+permissions:
+  contents: write   # allow this job to push commits back to the repo
+
 on:
   push:
     paths: [.github/commands.yml]
