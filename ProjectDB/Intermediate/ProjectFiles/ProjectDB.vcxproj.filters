@@ -12,7 +12,6 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
-    <None Include="..\..\Source.zip" />
     <None Include="..\..\steam_appid.txt" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -29,36 +28,120 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultGASAttributes.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GASAssociateHelper">
+      <UniqueIdentifier>{6EB4B60F-056E-38C1-8DCF-1D294BD46500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GASAssociateHelper\Source">
+      <UniqueIdentifier>{523AEB2D-0C51-30E9-B601-71682A0F9833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GASAssociateHelper\Source\GASAssociateHelper">
+      <UniqueIdentifier>{37E01D50-128A-3B9D-B3CF-5E35CE82E436}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\GASAssociateHelper.Build.cs">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper</Filter>
+    </None>
+    <Filter Include="Plugins\GASAssociateHelper\Source\GASAssociateHelper\Private">
+      <UniqueIdentifier>{3FED6D0A-CC9D-39DA-88D5-AE7714721A68}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\Private\GASAssociateHelper.cpp">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\Private\GASAssociateHelperCommands.cpp">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\Private\GASAssociateHelperStyle.cpp">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\Private\GASHAttributeWizard.cpp">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\GASAssociateHelper\Source\GASAssociateHelper\Public">
+      <UniqueIdentifier>{619ED2CF-47F5-3BFF-868E-FD3B8A1C8DFC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\Public\GASAssociateHelper.h">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\Public\GASAssociateHelperCommands.h">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\Public\GASAssociateHelperStyle.h">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\Public\GASHAttributeWizard.h">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\Public</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\GASAssociateHelper\Source\GASAssociateHelper\src">
+      <UniqueIdentifier>{F109A085-2AC0-322C-9B25-3B3D7F5CC5FA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\src\ALSCS.txt">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\src</Filter>
+    </None>
+    <None Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\src\ALSUplugin.txt">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\src</Filter>
+    </None>
+    <None Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\src\DefaultCS.txt">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\src</Filter>
+    </None>
+    <None Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\src\DefaultUplugin.txt">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\src</Filter>
+    </None>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\src\HelperFunctions.cpp">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GASAssociateHelper\Source\GASAssociateHelper\src\HelperFunctions.h">
+      <Filter>Plugins\GASAssociateHelper\Source\GASAssociateHelper\src</Filter>
+    </ClCompile>
+    <None Include="..\..\Plugins\GASAssociateHelper\GASAssociateHelper.uplugin">
+      <Filter>Plugins\GASAssociateHelper</Filter>
+    </None>
+    <Filter Include="Plugins\GASAssociateHelper\Resources">
+      <UniqueIdentifier>{31B5EE78-6A10-322C-832D-9AEA5160901F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GASAssociateHelper\Resources\ButtonIcon_40x.png">
+      <Filter>Plugins\GASAssociateHelper\Resources</Filter>
+    </None>
+    <None Include="..\..\Plugins\GASAssociateHelper\Resources\Icon128.png">
+      <Filter>Plugins\GASAssociateHelper\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\GASAssociate">
+      <UniqueIdentifier>{CBB2E2B6-C877-3184-91AC-96DE69EE0BAF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GASAssociate\GASAssociate.uplugin">
+      <Filter>Plugins\GASAssociate</Filter>
+    </None>
+    <Filter Include="Plugins\GASAssociate\Config">
+      <UniqueIdentifier>{9B60FB10-AD02-3301-A35D-893EB3478E38}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GASAssociate\Config\FilterPlugin.ini">
+      <Filter>Plugins\GASAssociate\Config</Filter>
+    </None>
+    <Filter Include="Plugins\GASAssociate\Resources">
+      <UniqueIdentifier>{81F75872-F7D9-3CE6-8BC2-181F7773B018}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GASAssociate\Resources\Icon128.png">
+      <Filter>Plugins\GASAssociate\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\GASAssociate\Source">
+      <UniqueIdentifier>{C56ACEB1-BB1D-3E3A-ABA2-4F310BDC1BC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GASAssociate\Source\GASAssociate">
+      <UniqueIdentifier>{AFF3B36A-F9D2-3417-9408-F27723947FDE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GASAssociate\Source\GASAssociate\GASAssociate.Build.cs">
+      <Filter>Plugins\GASAssociate\Source\GASAssociate</Filter>
     </None>
     <Filter Include="Source\ProjectDB">
       <UniqueIdentifier>{D11C50DB-A62B-3F28-B605-F504B670E9BD}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\ProjectDB\BaseAttributeSet.cpp">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\BaseAttributeSet.h">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\BaseGameplayAbility.cpp">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\BaseGameplayAbility.h">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\GASCharacter.cpp">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\GASCharacter.h">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\GASPlayerState.cpp">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\GASPlayerState.h">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
     <None Include="..\..\Source\ProjectDB\ProjectDB.Build.cs">
       <Filter>Source\ProjectDB</Filter>
     </None>
@@ -68,17 +151,65 @@
     <ClCompile Include="..\..\Source\ProjectDB\ProjectDB.h">
       <Filter>Source\ProjectDB</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\ProjectDBCharacter.cpp">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\ProjectDBCharacter.h">
-      <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\ProjectDB\ProjectDBGameMode.cpp">
       <Filter>Source\ProjectDB</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\ProjectDB\ProjectDBGameMode.h">
       <Filter>Source\ProjectDB</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectDB\Private">
+      <UniqueIdentifier>{95C95269-A6BB-3299-A3F0-421943557787}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectDB\Private\GASAbilitySystemComponent.cpp">
+      <Filter>Source\ProjectDB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Private\GASAssociate.cpp">
+      <Filter>Source\ProjectDB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Private\GASAttributeSet.cpp">
+      <Filter>Source\ProjectDB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Private\GASGameplayAbility.cpp">
+      <Filter>Source\ProjectDB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Private\GASTargetActor.cpp">
+      <Filter>Source\ProjectDB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Private\GASTargetActor_GroundTrace.cpp">
+      <Filter>Source\ProjectDB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Private\GetAbilityInfo.cpp">
+      <Filter>Source\ProjectDB\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Private\ProjectDBCharacter.cpp">
+      <Filter>Source\ProjectDB\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectDB\Public">
+      <UniqueIdentifier>{0DF09A5A-F67F-3DF2-9B0F-3244B229A845}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectDB\Public\GASAbilitySystemComponent.h">
+      <Filter>Source\ProjectDB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Public\GASAssociate.h">
+      <Filter>Source\ProjectDB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Public\GASAttributeSet.h">
+      <Filter>Source\ProjectDB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Public\GASGameplayAbility.h">
+      <Filter>Source\ProjectDB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Public\GASTargetActor.h">
+      <Filter>Source\ProjectDB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Public\GASTargetActor_GroundTrace.h">
+      <Filter>Source\ProjectDB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Public\GetAbilityInfo.h">
+      <Filter>Source\ProjectDB\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\Public\ProjectDBCharacter.h">
+      <Filter>Source\ProjectDB\Public</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

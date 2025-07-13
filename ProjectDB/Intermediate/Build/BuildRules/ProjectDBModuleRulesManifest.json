@@ -1,6 +1,8 @@
 {
 	"SourceFiles": [
 		"D:\\Repository\\ProjectDB\\ProjectDB\\Source\\ProjectDB\\ProjectDB.Build.cs",
+		"D:\\Repository\\ProjectDB\\ProjectDB\\Plugins\\GASAssociateHelper\\Source\\GASAssociateHelper\\GASAssociateHelper.Build.cs",
+		"D:\\Repository\\ProjectDB\\ProjectDB\\Plugins\\GASAssociate\\Source\\GASAssociate\\GASAssociate.Build.cs",
 		"D:\\Repository\\ProjectDB\\ProjectDB\\Source\\ProjectDB.Target.cs",
 		"D:\\Repository\\ProjectDB\\ProjectDB\\Source\\ProjectDBEditor.Target.cs"
 	],

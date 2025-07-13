@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-GASAssociate.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Repository\ProjectDB\ProjectDB\Intermediate\Build\Win64\x64\ProjectDBEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"D:\Repository\ProjectDB\ProjectDB\Plugins\GASAssociate\Intermediate\Build\Win64\x64\UnrealEditor\Development\GASAssociate\PerModuleInline.gen.cpp.obj"
+"D:\Repository\ProjectDB\ProjectDB\Plugins\GASAssociate\Intermediate\Build\Win64\x64\UnrealEditor\Development\GASAssociate\Default.rc2.res"
+/OUT:"D:\Repository\ProjectDB\ProjectDB\Plugins\GASAssociate\Intermediate\Build\Win64\x64\UnrealEditor\Development\GASAssociate\UnrealEditor-GASAssociate.lib"

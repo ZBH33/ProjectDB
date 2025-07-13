@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\repository\\projectdb\\projectdb\\plugins\\gasassociatehelper\\intermediate\\build\\win64\\unrealeditor\\inc\\gasassociatehelper\\uht\\gasassociatehelper.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\repository\\projectdb\\projectdb\\intermediate\\build\\win64\\x64\\projectdbeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\repository\\projectdb\\projectdb\\plugins\\gasassociatehelper\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\gasassociatehelper\\definitions.gasassociatehelper.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

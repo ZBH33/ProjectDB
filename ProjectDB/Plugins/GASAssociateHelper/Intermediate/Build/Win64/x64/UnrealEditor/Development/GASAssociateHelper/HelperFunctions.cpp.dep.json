@@ -1,0 +1,38 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\repository\\projectdb\\projectdb\\plugins\\gasassociatehelper\\source\\gasassociatehelper\\src\\helperfunctions.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\repository\\projectdb\\projectdb\\intermediate\\build\\win64\\x64\\projectdbeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\repository\\projectdb\\projectdb\\plugins\\gasassociatehelper\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\gasassociatehelper\\definitions.gasassociatehelper.h",
+            "d:\\repository\\projectdb\\projectdb\\plugins\\gasassociatehelper\\source\\gasassociatehelper\\src\\helperfunctions.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\sstream",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\istream",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\ostream",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\ios",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xlocnum",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\streambuf",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xiosbase",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\share.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xlocale",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xfacet",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xlocinfo",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\__msvc_xlocinfo_types.hpp",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\cctype",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\clocale",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\locale.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\string",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\fstream",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\__msvc_filebuf.hpp",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\regex",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\locale",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xlocbuf",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xlocmes",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xlocmon",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xloctime"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
