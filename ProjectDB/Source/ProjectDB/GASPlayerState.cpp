@@ -1,5 +1,6 @@
 #include "GASPlayerState.h"
 #include "AbilitySystemComponent.h"
+#include "AbilitySystemGlobals.h"
 #include "Attributes/BaseAttributeSet.h"
 
 AGASPlayerState::AGASPlayerState()

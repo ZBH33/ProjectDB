@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\Source.zip" />
     <None Include="..\..\steam_appid.txt" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -34,6 +35,30 @@
     <Filter Include="Source\ProjectDB">
       <UniqueIdentifier>{D11C50DB-A62B-3F28-B605-F504B670E9BD}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ProjectDB\BaseAttributeSet.cpp">
+      <Filter>Source\ProjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\BaseAttributeSet.h">
+      <Filter>Source\ProjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\BaseGameplayAbility.cpp">
+      <Filter>Source\ProjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\BaseGameplayAbility.h">
+      <Filter>Source\ProjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\GASCharacter.cpp">
+      <Filter>Source\ProjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\GASCharacter.h">
+      <Filter>Source\ProjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\GASPlayerState.cpp">
+      <Filter>Source\ProjectDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectDB\GASPlayerState.h">
+      <Filter>Source\ProjectDB</Filter>
+    </ClCompile>
     <None Include="..\..\Source\ProjectDB\ProjectDB.Build.cs">
       <Filter>Source\ProjectDB</Filter>
     </None>
@@ -54,42 +79,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\ProjectDB\ProjectDBGameMode.h">
       <Filter>Source\ProjectDB</Filter>
-    </ClCompile>
-    <Filter Include="Source\ProjectDB\Abilities">
-      <UniqueIdentifier>{F1EC4D2E-E935-3072-B3DF-5A04AE853C6F}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\ProjectDB\Abilities\BaseGameplayAbility.cpp">
-      <Filter>Source\ProjectDB\Abilities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\Abilities\BaseGameplayAbility.h">
-      <Filter>Source\ProjectDB\Abilities</Filter>
-    </ClCompile>
-    <Filter Include="Source\ProjectDB\Attributes">
-      <UniqueIdentifier>{D207D85E-D13E-36C3-B04F-08B98556ACD7}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\ProjectDB\Attributes\BaseAttributeSet.cpp">
-      <Filter>Source\ProjectDB\Attributes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\Attributes\BaseAttributeSet.h">
-      <Filter>Source\ProjectDB\Attributes</Filter>
-    </ClCompile>
-    <Filter Include="Source\ProjectDB\Characters">
-      <UniqueIdentifier>{AB784943-820A-30BA-B7C2-0C40FF94FC83}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\ProjectDB\Characters\GASCharacter.cpp">
-      <Filter>Source\ProjectDB\Characters</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\Characters\GASCharacter.h">
-      <Filter>Source\ProjectDB\Characters</Filter>
-    </ClCompile>
-    <Filter Include="Source\ProjectDB\Player">
-      <UniqueIdentifier>{E909C978-3C93-31EA-99E4-C3716139A0F6}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\ProjectDB\Player\GASPlayerState.cpp">
-      <Filter>Source\ProjectDB\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectDB\Player\GASPlayerState.h">
-      <Filter>Source\ProjectDB\Player</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

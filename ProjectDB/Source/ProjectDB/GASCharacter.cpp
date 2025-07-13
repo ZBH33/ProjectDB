@@ -1,5 +1,6 @@
 #include "GASCharacter.h"
 #include "AbilitySystemComponent.h"
+#include "AbilitySystemGlobals.h"
 #include "Attributes/BaseAttributeSet.h"
 
 AGASCharacter::AGASCharacter()
@@ -18,14 +19,12 @@ void AGASCharacter::BeginPlay()
 {
     Super::BeginPlay();
     
+    // Initialize global ability system data
+    UAbilitySystemGlobals::Get().InitGlobalData();
+    
     if (AbilitySystemComponent)
     {
+        AbilitySystemComponent->InitAbilityActorInfo(this, this);
         AttributeSet = AbilitySystemComponent->GetSet<UBaseAttributeSet>();
-        
-        // Initialize attributes (only on server)
-        if (GetLocalRole() == ROLE_Authority)
-        {
-            AbilitySystemComponent->InitAbilityActorInfo(this, this);
-        }
     }
 }
