@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Cst1KCFZ08=",
+  "dgSpecHash": "p6rQq+IqhPU=",
   "success": true,
-  "projectFilePath": "D:\\DuelBornUE5ProjectFiles\\ProjectDB\\Intermediate\\Build\\BuildRulesProjects\\ProjectDBModuleRules\\ProjectDBModuleRules.csproj",
+  "projectFilePath": "D:\\Repository\\ProjectDB\\ProjectDB\\Intermediate\\Build\\BuildRulesProjects\\ProjectDBModuleRules\\ProjectDBModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zbill\\.nuget\\packages\\bitfaster.caching\\2.4.1\\bitfaster.caching.2.4.1.nupkg.sha512",
     "C:\\Users\\zbill\\.nuget\\packages\\blake3\\1.1.0\\blake3.1.1.0.nupkg.sha512",
